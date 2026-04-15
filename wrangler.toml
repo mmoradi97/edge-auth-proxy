@@ -1,0 +1,13 @@
+name = "r2-quick-upload"
+main = "src/index.js"
+compatibility_date = "2024-04-16"
+workers_dev = true
+
+# The "Hard Drive" connection
+[[r2_buckets]]
+binding = "MY_BUCKET"
+bucket_name = "quick-uploads"
+
+# Note: Do not put your actual AUTH_KEY password here.
+# Add it via the CLI: npx wrangler secret put AUTH_KEY
+# Or via the Cloudflare Dashboard.
